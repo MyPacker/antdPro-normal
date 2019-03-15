@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>成都先胜信息科技</title>
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.9.6/dist/data-set.min.js"></script>
+</head>
+<body>
+  <noscript>对不起，我们需要您允许Javascript脚本以确保网站运行</noscript>
+  <div id="root"></div>
+  <% if(context.env === 'production') { %>
+    <script>
+      console.log("生产环境")
+    </script>
+  <% } else {%>
+    <script>
+      console.log("非生产环境")
+    </script>
+  <% } %>
+</body>
+</html>
